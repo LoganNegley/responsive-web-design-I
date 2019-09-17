@@ -74,7 +74,11 @@ nav {
 nav a {
     text-decoration: none;
     color: lightgray;
-    margin: 50px 60px;
+    margin: 5% 0;
+}
+
+@media(max-width:800px) {
+    nav img {}
 }
 
 /*Main Header Section*/
@@ -89,7 +93,6 @@ nav a {
 }
 
 .header h1 {
-    margin-top: 50px;
     font-size: 75px;
     text-align: center;
 }
@@ -102,6 +105,20 @@ nav a {
     width: 150px;
     height: 30px;
 }
+
+/******Media querie for main header 800px****/
+
+@media(max-width:800px) {
+    .main_header_container {
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .header_image {
+        display: none;
+    }
+}
+
+/*****End media querie*******/
 
 hr {
     margin: 75px 0px;
@@ -128,6 +145,7 @@ hr {
 
 .container2 {
     display: flex;
+    margin-top: 25px;
 }
 
 .content2 {
