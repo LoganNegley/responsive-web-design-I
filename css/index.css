@@ -202,7 +202,7 @@ nav a {
 
 @media (max-width: 500px) {
   body {
-    width: 100%;
+    width: 90%;
   }
   nav {
     display: flex;
@@ -212,9 +212,15 @@ nav a {
     order: -1;
   }
   nav a {
-    font-size: 25px;
+    margin: 0;
+    padding: 5%;
+    font-size: 20px;
     width: 100%;
     border-bottom: solid black 1px;
+  }
+  a:nth-child(2) {
+    padding: 5%;
+    border-top: solid black 1px;
   }
 }
 
@@ -273,9 +279,20 @@ hr {
   margin-top: 35px;
 }
 
-.content1.right {
+.container .right {
   margin-left: 85px;
   text-align: left;
+}
+
+/*Media for first part content at 500px */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .right {
+    margin: 0;
+    margin-top: 5%;
+  }
 }
 
 /*Second Part Content*/
@@ -291,6 +308,13 @@ hr {
   padding: 0px 15px;
 }
 
+/*Media for content2 at 500px*/
+@media (max-width: 500px) {
+  .container2 {
+  }
+}
+
+/*Footer*/
 .contact {
   margin-bottom: 50px;
 }
